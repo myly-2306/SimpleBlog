@@ -1,0 +1,16 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{content}}</p>
+  {{!-- pull from the user model and its name column. on the helper function 
+  created in helpers.js, format_date, then applying on date_created --}}
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    <span for="img" aria-label="money">💲</span>
+    {{!-- <span class="dollar-amount">{{format_amount needed_funding}}</span>
+    needed --}}
+  </p>
+  <p>
+    <button class="btn btn-primary">Upload</button>
+  </p>
+</div>
